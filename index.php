@@ -1,18 +1,17 @@
 <?php
-session_start();
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "bdleonel";
+    session_start();
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "bdleonel";
 
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
-$_SESSION['conex']=$conn;
-if ($conn->connect_error) {
-    die("Conexion fallida : " . $conn->connect_error);
-}
-
+    $_SESSION['conex']=$conn;
+    if ($conn->connect_error) {
+        die("Conexion fallida : " . $conn->connect_error);
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,7 +39,7 @@ if ($conn->connect_error) {
                 </tr>
                 <?php
                     $conex=$_SESSION['conex'];
-                    $sql = "SELECT tipo FROM cuentabancaria";
+                    $sql = "SELECT DISTINCT tipo FROM cuentabancaria";
                     $result = $conex->query($sql);
                     $cont=1;
             
