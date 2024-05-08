@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css"  href="styles.css">
 </head>
 <body>
+<?php include 'header.php'; ?>
     <div class="container-nav">
         <h1>Cuenta corriente</h1>
         
@@ -26,5 +27,7 @@
 
         <button class="botonH" onclick="location='index.php'"> < atras</button>
     </div>
+    <?php include 'footer.php'; ?>
+
 </body>
 </html>

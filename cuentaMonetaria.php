@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<?php include 'header.php'; ?>
     <div class="container-nav">
         <h1>Cuenta de Mercado Monetario</h1>
         
@@ -26,5 +27,7 @@
         </p>
         <button class="botonH" onclick="location='index.php'"> < atras</button>
     </div>
+    <?php include 'footer.php'; ?>
+
 </body>
 </html>

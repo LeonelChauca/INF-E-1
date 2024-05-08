@@ -7,10 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="container-nav">
-        <h1>Ejercicio 1 PHP</h1>
-        <h2>Leonel Moises Chauca Maydana</h2>
-    </nav>
+    <?php include 'header.php'; ?>
     <main class="container-main">
         <label for="">1.Realice un maquetado, con CSS y PHP. Donde muestre al menos tres tipos de cuentas bancarias. </label>
         <hr>
@@ -39,5 +36,6 @@ Una cuenta a plazo fijo es un producto financiero en el cual depositas una ciert
             </div>
         </div>
     </main>
+    <?php include 'footer.php'; ?>
 </body>
 </html>
